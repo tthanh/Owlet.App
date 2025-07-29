@@ -6,8 +6,8 @@
 public class Document
 {
     public DocumentID Id { get; private set; }
-    public string Title { get; private set; }
-    public string Content { get; private set; }
+    public string Title { get; private set; } = null!;
+    public string Content { get; private set; } = null!;
     public UserID CreatedBy { get; private set; }
     public DateTime CreatedAt { get; private set; }
     public DateTime LastModifiedAt { get; private set; }
